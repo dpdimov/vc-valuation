@@ -229,8 +229,8 @@ const VCValuationTool = () => {
 
         .page-wrapper {
           min-height: 100vh;
-          background: #0a0c10;
-          color: #c9d1d9;
+          background: #f8fafc;
+          color: #334155;
           font-family: 'Söhne', 'Helvetica Neue', sans-serif;
           padding: 40px;
         }
@@ -238,16 +238,16 @@ const VCValuationTool = () => {
         .page-title {
           font-size: 32px;
           font-weight: 400;
-          color: #e6edf3;
+          color: #1e293b;
           margin-bottom: 10px;
           letter-spacing: -0.5px;
         }
 
         .stage-btn {
           padding: 12px 18px;
-          border: 1px solid rgba(88, 166, 255, 0.15);
-          background: rgba(22, 27, 34, 0.8);
-          color: #7d8590;
+          border: 1px solid rgba(37, 99, 235, 0.1);
+          background: rgba(241, 245, 249, 0.9);
+          color: #64748b;
           font-size: 12px;
           font-weight: 500;
           cursor: pointer;
@@ -255,19 +255,19 @@ const VCValuationTool = () => {
           border-radius: 6px;
         }
         .stage-btn:hover {
-          background: rgba(33, 38, 45, 0.9);
-          border-color: rgba(88, 166, 255, 0.3);
-          color: #c9d1d9;
+          background: rgba(226, 232, 240, 0.9);
+          border-color: rgba(37, 99, 235, 0.2);
+          color: #334155;
         }
         .stage-btn.active {
-          background: rgba(88, 166, 255, 0.1);
-          border-color: rgba(88, 166, 255, 0.5);
-          color: #58a6ff;
+          background: rgba(37, 99, 235, 0.08);
+          border-color: rgba(37, 99, 235, 0.4);
+          color: #2563eb;
         }
 
         .panel {
-          background: rgba(13, 17, 23, 0.7);
-          border: 1px solid rgba(48, 54, 61, 0.6);
+          background: rgba(255, 255, 255, 0.9);
+          border: 1px solid rgba(203, 213, 225, 0.6);
           border-radius: 8px;
           padding: 20px;
         }
@@ -276,7 +276,7 @@ const VCValuationTool = () => {
           font-size: 10px;
           text-transform: uppercase;
           letter-spacing: 1.5px;
-          color: #484f58;
+          color: #94a3b8;
           margin-bottom: 14px;
           font-weight: 600;
         }
@@ -290,17 +290,17 @@ const VCValuationTool = () => {
           margin-bottom: 5px;
           font-size: 11px;
         }
-        .input-label { color: #7d8590; }
+        .input-label { color: #64748b; }
         .input-value {
           font-family: 'Source Code Pro', monospace;
-          color: #58a6ff;
+          color: #2563eb;
           font-weight: 500;
         }
         input[type="range"] {
           width: 100%;
           height: 4px;
           -webkit-appearance: none;
-          background: rgba(48, 54, 61, 0.8);
+          background: rgba(203, 213, 225, 0.5);
           border-radius: 2px;
           outline: none;
         }
@@ -308,14 +308,14 @@ const VCValuationTool = () => {
           -webkit-appearance: none;
           width: 12px;
           height: 12px;
-          background: #58a6ff;
+          background: #2563eb;
           border-radius: 50%;
           cursor: pointer;
         }
 
         .metric-card {
-          background: rgba(22, 27, 34, 0.6);
-          border: 1px solid rgba(48, 54, 61, 0.5);
+          background: rgba(241, 245, 249, 0.8);
+          border: 1px solid rgba(203, 213, 225, 0.5);
           border-radius: 8px;
           padding: 16px;
           text-align: center;
@@ -323,13 +323,13 @@ const VCValuationTool = () => {
         .metric-value {
           font-family: 'Source Code Pro', monospace;
           font-size: 24px;
-          color: #58a6ff;
+          color: #2563eb;
           font-weight: 600;
           margin-bottom: 4px;
         }
         .metric-label {
           font-size: 10px;
-          color: #484f58;
+          color: #94a3b8;
           text-transform: uppercase;
           letter-spacing: 0.8px;
         }
@@ -337,9 +337,9 @@ const VCValuationTool = () => {
         .score-btn {
           width: 32px;
           height: 32px;
-          border: 1px solid rgba(48, 54, 61, 0.6);
-          background: rgba(22, 27, 34, 0.6);
-          color: #7d8590;
+          border: 1px solid rgba(203, 213, 225, 0.6);
+          background: rgba(241, 245, 249, 0.8);
+          color: #64748b;
           font-size: 12px;
           font-weight: 500;
           cursor: pointer;
@@ -347,23 +347,23 @@ const VCValuationTool = () => {
           transition: all 0.15s;
         }
         .score-btn:hover {
-          background: rgba(33, 38, 45, 0.8);
-          border-color: rgba(88, 166, 255, 0.3);
+          background: rgba(226, 232, 240, 0.8);
+          border-color: rgba(37, 99, 235, 0.2);
         }
         .score-btn.active {
-          background: rgba(88, 166, 255, 0.15);
-          border-color: rgba(88, 166, 255, 0.5);
-          color: #58a6ff;
+          background: rgba(37, 99, 235, 0.1);
+          border-color: rgba(37, 99, 235, 0.4);
+          color: #2563eb;
         }
 
         .formula-box {
-          background: rgba(22, 27, 34, 0.8);
-          border: 1px solid rgba(48, 54, 61, 0.4);
+          background: rgba(241, 245, 249, 0.9);
+          border: 1px solid rgba(203, 213, 225, 0.4);
           border-radius: 6px;
           padding: 14px;
           font-family: 'Source Code Pro', monospace;
           font-size: 12px;
-          color: #7d8590;
+          color: #64748b;
           margin-top: 12px;
         }
 
@@ -372,14 +372,14 @@ const VCValuationTool = () => {
           grid-template-columns: 1fr 70px 70px 70px;
           gap: 8px;
           padding: 8px 0;
-          border-bottom: 1px solid rgba(48, 54, 61, 0.3);
+          border-bottom: 1px solid rgba(203, 213, 225, 0.3);
           font-size: 11px;
           align-items: center;
         }
         .comparable-input {
-          background: rgba(22, 27, 34, 0.8);
-          border: 1px solid rgba(48, 54, 61, 0.5);
-          color: #c9d1d9;
+          background: rgba(241, 245, 249, 0.9);
+          border: 1px solid rgba(203, 213, 225, 0.5);
+          color: #334155;
           padding: 6px 8px;
           border-radius: 4px;
           font-size: 11px;
@@ -388,12 +388,12 @@ const VCValuationTool = () => {
         }
         .comparable-input:focus {
           outline: none;
-          border-color: rgba(88, 166, 255, 0.5);
+          border-color: rgba(37, 99, 235, 0.4);
         }
 
         .valuation-bar {
           height: 40px;
-          background: rgba(22, 27, 34, 0.6);
+          background: rgba(241, 245, 249, 0.8);
           border-radius: 6px;
           position: relative;
           overflow: hidden;
@@ -404,7 +404,7 @@ const VCValuationTool = () => {
           top: 0;
           bottom: 0;
           width: 3px;
-          background: #58a6ff;
+          background: #2563eb;
           border-radius: 2px;
         }
         .valuation-range {
@@ -441,7 +441,7 @@ const VCValuationTool = () => {
           align-items: center;
           gap: 12px;
           padding: 10px 0;
-          border-bottom: 1px solid rgba(48, 54, 61, 0.3);
+          border-bottom: 1px solid rgba(203, 213, 225, 0.3);
         }
 
         .quality-label {
@@ -526,7 +526,7 @@ const VCValuationTool = () => {
             fontSize: '10px',
             textTransform: 'uppercase',
             letterSpacing: '2.5px',
-            color: '#484f58',
+            color: '#94a3b8',
             marginBottom: '8px'
           }}>
             Startup Valuation Framework
@@ -535,7 +535,7 @@ const VCValuationTool = () => {
             VC Method Valuation
           </h1>
           <p style={{
-            color: '#484f58',
+            color: '#94a3b8',
             fontSize: '13px',
             maxWidth: '700px',
             lineHeight: 1.6
@@ -564,13 +564,13 @@ const VCValuationTool = () => {
         </div>
 
         <div style={{
-          background: 'rgba(88, 166, 255, 0.05)',
-          border: '1px solid rgba(88, 166, 255, 0.1)',
+          background: 'rgba(37, 99, 235, 0.04)',
+          border: '1px solid rgba(37, 99, 235, 0.08)',
           borderRadius: '6px',
           padding: '12px 16px',
           marginBottom: '28px',
           fontSize: '12px',
-          color: '#7d8590'
+          color: '#64748b'
         }}>
           {stagePresets[selectedStage]?.description}
         </div>
@@ -720,12 +720,12 @@ const VCValuationTool = () => {
               </div>
 
               <div className="formula-box">
-                <div style={{ marginBottom: '8px', color: '#58a6ff' }}>Risk-Adjusted Rate:</div>
+                <div style={{ marginBottom: '8px', color: '#2563eb' }}>Risk-Adjusted Rate:</div>
                 <div style={{ marginBottom: '4px' }}>
-                  f = 1 - {(survivalRate/100).toFixed(2)}^(1/{yearsToEstablished}) = <span style={{ color: '#f0883e' }}>{formatPct(calculations.annualFailureRate)}</span>
+                  f = 1 - {(survivalRate/100).toFixed(2)}^(1/{yearsToEstablished}) = <span style={{ color: '#d97706' }}>{formatPct(calculations.annualFailureRate)}</span>
                 </div>
                 <div>
-                  r<sub>adj</sub> = ({baseDiscountRate}% + {formatPct(calculations.annualFailureRate)}) / (1 - {formatPct(calculations.annualFailureRate)}) = <span style={{ color: '#f0883e' }}>{formatPct(calculations.adjustedDiscountRate)}</span>
+                  r<sub>adj</sub> = ({baseDiscountRate}% + {formatPct(calculations.annualFailureRate)}) / (1 - {formatPct(calculations.annualFailureRate)}) = <span style={{ color: '#d97706' }}>{formatPct(calculations.adjustedDiscountRate)}</span>
                 </div>
               </div>
             </div>
@@ -740,15 +740,15 @@ const VCValuationTool = () => {
                 <div className="metric-label">DCF (Base)</div>
               </div>
               <div className="metric-card">
-                <div className="metric-value" style={{ color: '#f0883e' }}>{formatValue(calculations.adjustedDCF)}</div>
+                <div className="metric-value" style={{ color: '#d97706' }}>{formatValue(calculations.adjustedDCF)}</div>
                 <div className="metric-label">DCF (Risk-Adj)</div>
               </div>
               <div className="metric-card">
-                <div className="metric-value" style={{ color: '#a371f7' }}>{formatValue(calculations.comparableAdjustedValue)}</div>
+                <div className="metric-value" style={{ color: '#7c3aed' }}>{formatValue(calculations.comparableAdjustedValue)}</div>
                 <div className="metric-label">Comparable (Adj)</div>
               </div>
               <div className="metric-card">
-                <div className="metric-value" style={{ color: '#3fb950' }}>{formatValue(calculations.valuationRange.mid)}</div>
+                <div className="metric-value" style={{ color: '#16a34a' }}>{formatValue(calculations.valuationRange.mid)}</div>
                 <div className="metric-label">Blended Mid</div>
               </div>
             </div>
@@ -775,12 +775,12 @@ const VCValuationTool = () => {
                       />
                       <div
                         className="valuation-marker"
-                        style={{ left: `${toPercent(calculations.adjustedDCF)}%`, background: '#f0883e' }}
+                        style={{ left: `${toPercent(calculations.adjustedDCF)}%`, background: '#d97706' }}
                         title={`Risk-Adj DCF: ${formatValue(calculations.adjustedDCF)}`}
                       />
                       <div
                         className="valuation-marker"
-                        style={{ left: `${toPercent(calculations.comparableAdjustedValue)}%`, background: '#a371f7' }}
+                        style={{ left: `${toPercent(calculations.comparableAdjustedValue)}%`, background: '#7c3aed' }}
                         title={`Comparable: ${formatValue(calculations.comparableAdjustedValue)}`}
                       />
                     </>
@@ -788,7 +788,7 @@ const VCValuationTool = () => {
                 })()}
               </div>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#7d8590' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#64748b' }}>
                 <span>Low: {formatValue(calculations.valuationRange.low)}</span>
                 <span>Mid: {formatValue(calculations.valuationRange.mid)}</span>
                 <span>High: {formatValue(calculations.valuationRange.high)}</span>
@@ -800,20 +800,20 @@ const VCValuationTool = () => {
               <h3 className="section-title">Projected Financials</h3>
 
               <div className="financials-grid">
-                <div style={{ color: '#484f58' }}>Year</div>
+                <div style={{ color: '#94a3b8' }}>Year</div>
                 {[0, 1, 2, 3, 4, 5].map(y => (
-                  <div key={y} style={{ color: '#7d8590', textAlign: 'right' }}>{y === 0 ? 'Now' : `Y${y}`}</div>
+                  <div key={y} style={{ color: '#64748b', textAlign: 'right' }}>{y === 0 ? 'Now' : `Y${y}`}</div>
                 ))}
 
-                <div style={{ color: '#484f58' }}>Revenue</div>
+                <div style={{ color: '#94a3b8' }}>Revenue</div>
                 {calculations.revenues.map((r, i) => (
-                  <div key={i} style={{ color: '#58a6ff', textAlign: 'right' }}>{formatValue(r)}</div>
+                  <div key={i} style={{ color: '#2563eb', textAlign: 'right' }}>{formatValue(r)}</div>
                 ))}
 
-                <div style={{ color: '#484f58' }}>Cash Flow</div>
-                <div style={{ color: '#484f58', textAlign: 'right' }}>—</div>
+                <div style={{ color: '#94a3b8' }}>Cash Flow</div>
+                <div style={{ color: '#94a3b8', textAlign: 'right' }}>—</div>
                 {calculations.cashFlows.map((cf, i) => (
-                  <div key={i} style={{ color: cf >= 0 ? '#3fb950' : '#f85149', textAlign: 'right' }}>
+                  <div key={i} style={{ color: cf >= 0 ? '#16a34a' : '#dc2626', textAlign: 'right' }}>
                     {formatValue(cf)}
                   </div>
                 ))}
@@ -822,13 +822,13 @@ const VCValuationTool = () => {
               <div style={{
                 marginTop: '16px',
                 paddingTop: '12px',
-                borderTop: '1px solid rgba(48, 54, 61, 0.4)',
+                borderTop: '1px solid rgba(203, 213, 225, 0.4)',
                 display: 'flex',
                 justifyContent: 'space-between',
                 fontSize: '11px'
               }}>
-                <span style={{ color: '#484f58' }}>Terminal Value (Y5):</span>
-                <span style={{ color: '#58a6ff', fontFamily: "'Source Code Pro', monospace" }}>
+                <span style={{ color: '#94a3b8' }}>Terminal Value (Y5):</span>
+                <span style={{ color: '#2563eb', fontFamily: "'Source Code Pro', monospace" }}>
                   {formatValue(calculations.terminalValue)}
                 </span>
               </div>
@@ -842,7 +842,7 @@ const VCValuationTool = () => {
                 <div style={{ flex: 1 }}>
                   <div style={{
                     height: '8px',
-                    background: 'rgba(48, 54, 61, 0.6)',
+                    background: 'rgba(203, 213, 225, 0.6)',
                     borderRadius: '4px',
                     overflow: 'hidden',
                     marginBottom: '8px'
@@ -850,11 +850,11 @@ const VCValuationTool = () => {
                     <div style={{
                       height: '100%',
                       width: `${100 - calculations.discountImpact}%`,
-                      background: 'linear-gradient(90deg, #f0883e, #58a6ff)',
+                      background: 'linear-gradient(90deg, #d97706, #2563eb)',
                       borderRadius: '4px'
                     }} />
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '10px', color: '#484f58' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '10px', color: '#94a3b8' }}>
                     <span>Risk-Adjusted</span>
                     <span>Base DCF</span>
                   </div>
@@ -864,12 +864,12 @@ const VCValuationTool = () => {
                   <div style={{
                     fontSize: '28px',
                     fontFamily: "'Source Code Pro', monospace",
-                    color: '#f85149',
+                    color: '#dc2626',
                     fontWeight: 600
                   }}>
                     -{calculations.discountImpact.toFixed(0)}%
                   </div>
-                  <div style={{ fontSize: '10px', color: '#484f58', textTransform: 'uppercase' }}>
+                  <div style={{ fontSize: '10px', color: '#94a3b8', textTransform: 'uppercase' }}>
                     Value Discount
                   </div>
                 </div>
@@ -878,14 +878,14 @@ const VCValuationTool = () => {
               <div style={{
                 marginTop: '16px',
                 padding: '12px',
-                background: 'rgba(248, 81, 73, 0.08)',
+                background: 'rgba(220, 38, 38, 0.08)',
                 borderRadius: '6px',
                 fontSize: '11px',
-                color: '#7d8590',
+                color: '#64748b',
                 lineHeight: 1.6
               }}>
-                With <strong style={{ color: '#f0883e' }}>{formatPct(calculations.annualFailureRate)}</strong> annual failure probability,
-                the effective discount rate jumps from {baseDiscountRate}% to <strong style={{ color: '#f0883e' }}>{formatPct(calculations.adjustedDiscountRate)}</strong>.
+                With <strong style={{ color: '#d97706' }}>{formatPct(calculations.annualFailureRate)}</strong> annual failure probability,
+                the effective discount rate jumps from {baseDiscountRate}% to <strong style={{ color: '#d97706' }}>{formatPct(calculations.adjustedDiscountRate)}</strong>.
                 This reflects the compounding risk of total loss—not volatility, but extinction.
               </div>
             </div>
@@ -906,8 +906,8 @@ const VCValuationTool = () => {
               ].map(({ label, score, setter, weight }) => (
                 <div key={label} className="quality-row">
                   <div className="quality-label">
-                    <div style={{ fontSize: '11px', color: '#7d8590' }}>{label}</div>
-                    <div style={{ fontSize: '9px', color: '#484f58' }}>Weight: {weight}</div>
+                    <div style={{ fontSize: '11px', color: '#64748b' }}>{label}</div>
+                    <div style={{ fontSize: '9px', color: '#94a3b8' }}>Weight: {weight}</div>
                   </div>
                   <div className="score-buttons">
                     {[1, 2, 3, 4, 5].map(n => (
@@ -924,7 +924,7 @@ const VCValuationTool = () => {
                     marginLeft: 'auto',
                     fontFamily: "'Source Code Pro', monospace",
                     fontSize: '11px',
-                    color: calculations.qualityFactors[label.toLowerCase().split(' ')[0]]?.multiplier >= 1 ? '#3fb950' : '#f85149'
+                    color: calculations.qualityFactors[label.toLowerCase().split(' ')[0]]?.multiplier >= 1 ? '#16a34a' : '#dc2626'
                   }}>
                     {calculations.qualityFactors[label.toLowerCase().split(' ')[0]]?.multiplier.toFixed(2)}x
                   </div>
@@ -937,14 +937,14 @@ const VCValuationTool = () => {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 padding: '12px',
-                background: 'rgba(88, 166, 255, 0.08)',
+                background: 'rgba(37, 99, 235, 0.06)',
                 borderRadius: '6px'
               }}>
-                <span style={{ fontSize: '11px', color: '#7d8590' }}>Total Quality Multiplier:</span>
+                <span style={{ fontSize: '11px', color: '#64748b' }}>Total Quality Multiplier:</span>
                 <span style={{
                   fontFamily: "'Source Code Pro', monospace",
                   fontSize: '16px',
-                  color: calculations.totalQualityMultiplier >= 1 ? '#3fb950' : '#f85149',
+                  color: calculations.totalQualityMultiplier >= 1 ? '#16a34a' : '#dc2626',
                   fontWeight: 600
                 }}>
                   {calculations.totalQualityMultiplier.toFixed(2)}x
@@ -962,8 +962,8 @@ const VCValuationTool = () => {
                     padding: '4px 8px',
                     fontSize: '10px',
                     background: 'transparent',
-                    border: '1px solid rgba(88, 166, 255, 0.3)',
-                    color: '#58a6ff',
+                    border: '1px solid rgba(37, 99, 235, 0.2)',
+                    color: '#2563eb',
                     borderRadius: '4px',
                     cursor: 'pointer'
                   }}
@@ -972,11 +972,11 @@ const VCValuationTool = () => {
                 </button>
               </div>
 
-              <div className="comparable-row" style={{ borderBottom: '1px solid rgba(48, 54, 61, 0.5)' }}>
-                <span style={{ color: '#484f58' }}>Company</span>
-                <span style={{ color: '#484f58', textAlign: 'right' }}>Val (£m)</span>
-                <span style={{ color: '#484f58', textAlign: 'right' }}>Rev (£m)</span>
-                <span style={{ color: '#484f58', textAlign: 'right' }}>Multiple</span>
+              <div className="comparable-row" style={{ borderBottom: '1px solid rgba(203, 213, 225, 0.5)' }}>
+                <span style={{ color: '#94a3b8' }}>Company</span>
+                <span style={{ color: '#94a3b8', textAlign: 'right' }}>Val (£m)</span>
+                <span style={{ color: '#94a3b8', textAlign: 'right' }}>Rev (£m)</span>
+                <span style={{ color: '#94a3b8', textAlign: 'right' }}>Multiple</span>
               </div>
 
               {comparables.map((comp, i) => (
@@ -1003,7 +1003,7 @@ const VCValuationTool = () => {
                         style={{ textAlign: 'right' }}
                       />
                       <span style={{
-                        color: '#a371f7',
+                        color: '#7c3aed',
                         textAlign: 'right',
                         fontFamily: "'Source Code Pro', monospace"
                       }}>
@@ -1012,14 +1012,14 @@ const VCValuationTool = () => {
                     </>
                   ) : (
                     <>
-                      <span style={{ color: '#c9d1d9' }}>{comp.name}</span>
-                      <span style={{ color: '#7d8590', textAlign: 'right', fontFamily: "'Source Code Pro', monospace" }}>
+                      <span style={{ color: '#334155' }}>{comp.name}</span>
+                      <span style={{ color: '#64748b', textAlign: 'right', fontFamily: "'Source Code Pro', monospace" }}>
                         £{comp.valuation}m
                       </span>
-                      <span style={{ color: '#7d8590', textAlign: 'right', fontFamily: "'Source Code Pro', monospace" }}>
+                      <span style={{ color: '#64748b', textAlign: 'right', fontFamily: "'Source Code Pro', monospace" }}>
                         £{comp.revenue}m
                       </span>
-                      <span style={{ color: '#a371f7', textAlign: 'right', fontFamily: "'Source Code Pro', monospace" }}>
+                      <span style={{ color: '#7c3aed', textAlign: 'right', fontFamily: "'Source Code Pro', monospace" }}>
                         {comp.revenue > 0 ? `${(comp.valuation / comp.revenue).toFixed(1)}x` : '—'}
                       </span>
                     </>
@@ -1034,9 +1034,9 @@ const VCValuationTool = () => {
                     width: '100%',
                     padding: '8px',
                     marginTop: '8px',
-                    background: 'rgba(88, 166, 255, 0.1)',
-                    border: '1px dashed rgba(88, 166, 255, 0.3)',
-                    color: '#58a6ff',
+                    background: 'rgba(37, 99, 235, 0.08)',
+                    border: '1px dashed rgba(37, 99, 235, 0.2)',
+                    color: '#2563eb',
                     borderRadius: '4px',
                     cursor: 'pointer',
                     fontSize: '11px'
@@ -1049,24 +1049,24 @@ const VCValuationTool = () => {
               <div style={{
                 marginTop: '16px',
                 padding: '12px',
-                background: 'rgba(163, 113, 247, 0.08)',
+                background: 'rgba(124, 58, 237, 0.08)',
                 borderRadius: '6px'
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '11px' }}>
-                  <span style={{ color: '#7d8590' }}>Median Multiple:</span>
-                  <span style={{ color: '#a371f7', fontFamily: "'Source Code Pro', monospace" }}>
+                  <span style={{ color: '#64748b' }}>Median Multiple:</span>
+                  <span style={{ color: '#7c3aed', fontFamily: "'Source Code Pro', monospace" }}>
                     {calculations.medianMultiple.toFixed(1)}x
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '11px' }}>
-                  <span style={{ color: '#7d8590' }}>Base Comparable Value:</span>
-                  <span style={{ color: '#7d8590', fontFamily: "'Source Code Pro', monospace" }}>
+                  <span style={{ color: '#64748b' }}>Base Comparable Value:</span>
+                  <span style={{ color: '#64748b', fontFamily: "'Source Code Pro', monospace" }}>
                     {formatValue(calculations.comparableBaseValue)}
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px' }}>
-                  <span style={{ color: '#7d8590' }}>Quality-Adjusted:</span>
-                  <span style={{ color: '#a371f7', fontFamily: "'Source Code Pro', monospace", fontWeight: 600 }}>
+                  <span style={{ color: '#64748b' }}>Quality-Adjusted:</span>
+                  <span style={{ color: '#7c3aed', fontFamily: "'Source Code Pro', monospace", fontWeight: 600 }}>
                     {formatValue(calculations.comparableAdjustedValue)}
                   </span>
                 </div>
@@ -1077,22 +1077,22 @@ const VCValuationTool = () => {
             <div style={{
               marginTop: '16px',
               padding: '16px',
-              background: 'rgba(63, 185, 80, 0.06)',
-              border: '1px solid rgba(63, 185, 80, 0.15)',
+              background: 'rgba(22, 163, 74, 0.08)',
+              border: '1px solid rgba(22, 163, 74, 0.15)',
               borderRadius: '8px',
               fontSize: '11px',
-              color: '#7d8590',
+              color: '#64748b',
               lineHeight: 1.7
             }}>
-              <strong style={{ color: '#3fb950' }}>Valuation Summary:</strong><br/>
+              <strong style={{ color: '#16a34a' }}>Valuation Summary:</strong><br/>
               The risk-adjusted DCF suggests <strong>{formatValue(calculations.adjustedDCF)}</strong>,
               while comparable analysis (adjusted for quality) suggests <strong>{formatValue(calculations.comparableAdjustedValue)}</strong>.
-              The blended midpoint is <strong style={{ color: '#3fb950' }}>{formatValue(calculations.valuationRange.mid)}</strong>.
+              The blended midpoint is <strong style={{ color: '#16a34a' }}>{formatValue(calculations.valuationRange.mid)}</strong>.
               {calculations.adjustedDCF > calculations.comparableAdjustedValue * 1.5 && (
-                <span style={{ color: '#f0883e' }}> Note: DCF significantly exceeds comparables—projections may be optimistic.</span>
+                <span style={{ color: '#d97706' }}> Note: DCF significantly exceeds comparables—projections may be optimistic.</span>
               )}
               {calculations.comparableAdjustedValue > calculations.adjustedDCF * 1.5 && (
-                <span style={{ color: '#f0883e' }}> Note: Comparables exceed DCF—either market is frothy or projections conservative.</span>
+                <span style={{ color: '#d97706' }}> Note: Comparables exceed DCF—either market is frothy or projections conservative.</span>
               )}
             </div>
           </div>
